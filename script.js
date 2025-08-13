@@ -5,6 +5,8 @@ const number = document.querySelector("#number");
 const classification = document.querySelector("#classification");
 
 calculate.addEventListener("click", calculateIMC);
+height.addEventListener("keyup", calculateIMC);
+weight.addEventListener("keyup", calculateIMC);
 
 function calculateIMC() {
   let h = height.value / 100;
