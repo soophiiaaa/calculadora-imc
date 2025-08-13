@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <h1>Calcular IMC</h1>
+    <p>Preencha as informações abaixo e descubra seu IMC.</p>
+
+    <div class="main">
+      <div id="values">
+        <label for="height">Altura (cm)</label>
+        <input type="number" name="height" id="height" />
+
+        <label for="weight">Peso (kg)</label>
+        <input type="number" name="weight" id="weight" />
+
+        <button id="calculate">Calcular</button>
+      </div>
+
+      <div id="result">
+        <h2>Resultado</h2>
+        <p>0</p>
+        <p id="classification"></p>
+        <p>
+          O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado (em
+          m), de acordo com a seguinte fórmula: <br />
+          <strong>IMC = peso / (altura x altura)</strong>
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
