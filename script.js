@@ -9,6 +9,12 @@ height.addEventListener("keyup", calculateIMC);
 weight.addEventListener("keyup", calculateIMC);
 
 function calculateIMC() {
+  if (height.value === "" || weight.value === "") {
+    number.textContent = 0;
+    classification.innerText = "";
+    return;
+  }
+
   let h = height.value / 100;
   let w = weight.value;
   let imc = w / (h * h);
